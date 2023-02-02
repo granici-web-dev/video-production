@@ -1,0 +1,32 @@
+.Header {
+  
+
+  .wrapper{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuList{
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    li{
+      margin-left: 20px;
+    }
+  }
+}
+
+.textField {}
+
+.searchIcon {}
+
+.searchInput {
+  padding: 20px;
+}
+
+.Logo{
+  padding-top: 10px;
+}
