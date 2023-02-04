@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,3 +25,10 @@ ul li{
   list-style-type: none;
 }
 
+:root {
+  --color-menu: #101828;
+  --color-primary: #7F56D9;
+  --color-white: #FFFFFF;
+  --color-primary-light: #F4EBFF;
+  --color-border: #D0D5DD;
+}

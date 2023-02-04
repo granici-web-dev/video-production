@@ -8,9 +8,18 @@ function Header() {
           <div className="Logo">
             <a href="/"><img src="./img/Header/Logo.svg" alt="Logo" /></a>
           </div>
-          <div className="textField">
-            <div className="searchIcon">
-              <input className="searchInput" type="search" placeholder="Want to learn?"></input>
+          <div className={styles.textField}>
+            <div className={styles.searchIcon}>
+              <img src="./img/Header/search.svg" alt=""></img>
+              <div className={styles.explore}>
+                <select name="dog-names" id="dog-names">
+                  <option value="explore">Explore</option>
+                  <option value="dave">Dave</option>
+                  <option value="pumpernickel">Pumpernickel</option>
+                  <option value="reeses">Reeses</option>
+                </select>
+              </div>
+              <input className={styles.searchInput} type="search" placeholder="Want to learn?"></input>
             </div>
           </div>
           <div className={styles.menuList}>
@@ -20,9 +29,9 @@ function Header() {
               <li><a href="/">Universities</a></li>
             </ul>
           </div>
-          <div className="signButtons">
+          <div className={styles.signButtons}>
             <a href="/">Sign In</a>
-            <a href="/">Create free account</a>
+            <a href="/" className={styles.registration}>Create free account</a>
           </div>
         </div>
       </div>
