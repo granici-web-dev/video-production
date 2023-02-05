@@ -1,3 +1,5 @@
+@import './node_modules/reset-css/sass/reset';
+
 body {
   margin: 0;
   font-family: 'Inter', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,6 +30,7 @@ ul li{
 :root {
   --color-menu: #101828;
   --color-primary: #7F56D9;
+  --color-primary-hover: #6941C6;
   --color-white: #FFFFFF;
   --color-primary-light: #F4EBFF;
   --color-border: #D0D5DD;

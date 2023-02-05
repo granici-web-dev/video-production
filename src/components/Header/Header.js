@@ -14,6 +14,7 @@ const customStyles = {
 };
 
 function Header() {
+
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -29,7 +30,6 @@ function Header() {
   function closeModal() {
     setIsOpen(false);
   }
-
   return (
     <div className="container">
       <div className={styles.Header}>
@@ -59,7 +59,7 @@ function Header() {
             </ul>
           </div>
           <div className={styles.signButtons}>
-            <a href="/">Sign In</a>
+            <button onClick={openModal} className={styles.signIn}>Sign In</button>
             <button onClick={openModal} className={styles.registration}>Create free account</button>
             <Modal
               isOpen={modalIsOpen}
@@ -67,16 +67,16 @@ function Header() {
               onRequestClose={closeModal}
               style={customStyles}
               contentLabel="Example Modal"
+              className={styles.Register}
             >
               <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
               <button onClick={closeModal}>close</button>
               <div>I am a modal</div>
               <form>
                 <input />
-                <button>tab navigation</button>
-                <button>stays</button>
-                <button>inside</button>
-                <button>the modal</button>
+                <input />
+                <input />
+                <button>Registration</button>
               </form>
             </Modal>
           </div>
